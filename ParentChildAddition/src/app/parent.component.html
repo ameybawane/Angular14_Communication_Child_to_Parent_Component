@@ -1,0 +1,13 @@
+<p>Parent Component</p>
+<table border="1">
+    <tr>
+        <td>
+            <h1>Total : {{childData}}</h1>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <app-child (addition)="parentMethod($event)"></app-child>
+        </td>
+    </tr>
+</table>
